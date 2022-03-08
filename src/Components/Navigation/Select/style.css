@@ -1,0 +1,113 @@
+.selectContainer{
+  position: relative;
+  left: 40% ;
+  top: 3px;
+  font-family: Arial;
+  width: 250px;
+  transition: .4s;
+}
+.selectContainer.on{ left: 44.5%;}
+
+.ItemSelected{
+  background-color: #920202;
+  padding: 12px;
+  font-size: large;
+  color: white;
+  transition: .4s;
+  border-radius: 10px;
+}
+.ItemSelected.on{
+  background-color: rgba(178, 34, 34,.6);
+  border-radius: 10px 10px 0px 0px;
+}
+.ItemSelected:after {
+  position: absolute;
+  content: "";
+  top: 18px;
+  right: 85px;
+  width: 0;
+  height: 0;
+  border: 7px solid transparent;
+  border-color: #fff transparent transparent transparent;
+  transition: .4s;
+}
+.ItemSelected.on:after {
+border-color: transparent transparent #fff transparent;
+  top: 10px;
+}
+.ItemContainer{
+  height: 0; 
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  overflow-y: hidden;
+  transition: .4s;
+}
+.ItemContainer.on{
+  height: 500px;
+}
+.Item{
+  background-color: rgba(178, 34, 34,0);
+  padding: 10px 0;
+  width: 93%;
+  transition: .5s;
+  color: rgba(255, 255, 255, 0);
+  padding-left: 20px;
+}
+.Item.on:hover{
+  background-color: rgb(100, 27, 27)
+}
+.Item.on{
+  background-color: rgb(119, 31, 31);
+  color: #fff;
+  width: 100%;
+}
+.Item.end{
+  border-radius: 0px 0px 10px 10px;
+}
+
+.searchButton{
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  height: 45px;
+  width: 70px;
+  padding-right: 5px;
+  border-left: 2px solid white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #920202;
+  border-radius: 10px;
+  transition: .4s;
+}
+.searchButton:hover{
+  background-color: rgb(100, 27, 27);
+  cursor: pointer;
+}
+.ItemSelected.on > .searchButton{
+  border-radius: 10px 10px 0px 10px;
+}
+.check{
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+}
+
+.check.reqPending{
+  margin: 0;
+  border: 5px solid #ffffff;
+  border-top: 6px solid #ce3232;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  animation: spin 1s linear infinite;
+}
+
+.check.err{
+  border: 5px solid #4d1212;
+}
+
+.check.done{
+  border: 5px solid white;
+}

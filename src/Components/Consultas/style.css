@@ -1,0 +1,87 @@
+.contentTable{
+  margin: 60px 0px;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-flow: column;
+}
+.Tble{
+  width: 90%;  
+  border-radius: 20px;
+  border: solid #1c1c1c;
+  border-width: 20px 0;
+  box-shadow: 5px 5px 20px black;
+  margin-top: 30px;
+  overflow-x: auto;
+  opacity: .95;
+}
+table{
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 100%;
+  background-color: #1c1c1c;
+  opacity: .9;
+}
+td,th{
+  background-color: #2c2c2c;
+  color: #909090;
+  text-align: left;
+  border: solid black;
+  border-width: 0px;
+  padding: 5px 10px;
+  user-select: text;
+}
+.edit{
+  cursor: pointer;
+}
+th{
+  padding: 5px 20px;
+  font-family: cursive;
+}
+.searchRow{
+  display: flex;
+  background-color: #1c1c1c;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 20px black;
+  width: 90%;
+  opacity: .9;
+}
+.searchRow > input{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: medium;
+  width: 100%;
+  padding: 12px;
+  background-color: #2c2c2c;
+  color: #909090;
+  border: none;
+  outline-color: #4c4c4c;
+}
+
+#editBox{
+  display: none;
+}
+
+.infoBox-content.E{
+  margin: 10% auto;
+}
+
+.divButton{
+  display: flex;
+  justify-content: space-around;
+  height: 35px;
+  margin: 5px;
+}
+
+.radiobtn.E {
+  background-color: #2c2c2c;
+}
+
+.Bregistrar.EB{
+  height: 100%;
+}
+
+#Etiempo,#EITotal{
+  width: 45%;
+}

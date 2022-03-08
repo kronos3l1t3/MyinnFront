@@ -1,0 +1,102 @@
+/* The side navigation menu */
+.sidenav {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: #1c1c1c; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 70px; /* Place content 30px from the top */
+  transition: 0.4s; /* 0.4 second transition effect to slide in the sidenav */
+}
+.sidenav.on{
+  width: 200px;
+}
+
+/* The navigation menu links */
+.sidenav button {
+  border: none;
+  outline: none;
+  background-color: rgba(0, 0, 0, 0);
+  width: 100%;
+  font-size: 28px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #B22222;
+  display: block;
+  transition: 0.4s;
+  cursor: pointer;
+  margin: 10px 0;
+  padding: 30px 0px;
+  padding-right: 20px;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav button:hover {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+/* LOGOBAR */
+.logobar{
+  width: 100%;
+  height: 60px;
+  background-color: #1c1c1c;
+  box-shadow: 0 0 15px black;
+  padding: 0.25em 0px;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+}
+
+img{
+  position: absolute;
+  right: 20px;
+  height: 52px;
+}
+
+.MenuButton {
+  position: absolute;
+  left: 30px;
+  display: inline-block;
+  cursor: pointer;
+  margin: 8px 0;
+  transition: .4s;
+}
+.MenuButton.on{left: 230px;}
+.MenuButton:hover > div {
+  background-color: rgba(255, 255, 255, .8);
+}
+
+.bar1, .bar2, .bar3 {
+  width: 30px;
+  height: 4px;
+  background-color: #B22222;
+  margin: 6px 0;
+  border-radius: 15%;
+  transition: 0.4s;
+}
+
+.on .bar1 {
+  transform: rotate(-45deg) translate(-7px, 6.5px);
+  width: 22px;
+}
+
+.on .bar2 {opacity: 0;}
+
+.on .bar3 {
+  transform: rotate(45deg) translate(-7px, -8px);
+  width: 22px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav p {font-size: 22px;}
+}
+@media screen and (max-width: 450px) {
+  .sidenav.on{width: 120px;}
+  .MenuButton.on{left: 130px;}
+}
+@media screen and (max-width: 780px) {
+  img{display: none;}
+}

@@ -1,0 +1,23 @@
+*{
+  user-select: none;
+  box-sizing: border-box;
+}
+
+body{padding-top: 60px;}
+
+.full{
+  height: -webkit-fill-available;
+  background: url('back.jpg') no-repeat center;
+  background-size: cover;
+  transition: .4s;
+  overflow-y: auto;
+}
+.full.on{
+  margin-left: 200px;
+}
+
+@media screen and (max-width: 450px){
+  .full.on{
+    margin-left: 120px
+  }
+}
