@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "engines": { "npm": "^8.x", "node": "^16.x" },
   "dependencies": {
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
